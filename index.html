@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Elora</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -269,6 +271,131 @@ footer p {
   margin: 0;
 }
 
+/* ================= MOBILE AJUSTES ================= */
+@media (max-width: 768px) {
+
+  /* ===== TOPO ===== */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .logo-text {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  .logo-text h1 {
+    font-size: 32px;
+  }
+
+  .logo-text .subtitulo {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .logo-text .runa {
+    font-size: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    margin: 20px;
+    padding: 70px 20px;
+    border-radius: 30px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  /* ===== SEÇÕES ===== */
+  section {
+    padding: 45px 20px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p {
+    font-size: 15px;
+  }
+
+  /* ===== SERVIÇOS ===== */
+  .servicos-section {
+    padding: 50px 20px;
+  }
+
+  .servicos-cards {
+    gap: 25px;
+  }
+
+  .servico-box {
+    width: 100%;
+    max-width: 360px;
+    padding: 32px 26px;
+  }
+
+  /* ===== GALERIA ===== */
+  .galeria {
+    gap: 18px;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* remove zoom no touch */
+  .galeria img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* ===== CTA ===== */
+  .cta a {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+
+  /* ===== MARCA D’ÁGUA ===== */
+  .fundo-marca-agua::before {
+    width: 420px;
+    height: 420px;
+    opacity: 0.04;
+  }
+
+}
 
 </style>
 </head>
